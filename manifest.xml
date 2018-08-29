@@ -45,7 +45,7 @@
   `pcoaccion` varchar(250) default NULL,
   `pbatic` varchar(250) default NULL,
   `abtipolocal` varchar(200) default NULL,
-  `horaapprox` datetime default NULL,
+  `horaapprox` varchar(100) default NULL,
   `operativa` varchar(200) default NULL,
   `datoslistado` varchar(200) default NULL,
   `accesoweb` varchar(200) default NULL,
@@ -67,7 +67,7 @@
   `abonado_no` varchar(250) default NULL,
   `optel` varchar(50) default NULL,
   PRIMARY KEY (`abonadoid`),
-  CONSTRAINT `fk_1_vtiger_abonabo` FOREIGN KEY (`abonadoid`) REFERENCES `vtiger_crmentity` (`crmid`) ON DELETE CASCADE
+  CONSTRAINT `fk_1_vtiger_abonado` FOREIGN KEY (`abonadoid`) REFERENCES `vtiger_crmentity` (`crmid`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
 </table>
 <table>
@@ -106,7 +106,7 @@
 <fieldname>numabonado</fieldname>
 <uitype>1</uitype>
 <columnname>numabonado</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>numabonado</fieldlabel>
 <readonly>1</readonly>
@@ -126,7 +126,7 @@
 <fieldname>accid</fieldname>
 <uitype>10</uitype>
 <columnname>accid</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>accid</fieldlabel>
 <readonly>1</readonly>
@@ -149,7 +149,7 @@
 <fieldname>fechaalta</fieldname>
 <uitype>5</uitype>
 <columnname>fechaalta</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>accid</fieldlabel>
 <readonly>1</readonly>
@@ -169,7 +169,7 @@
 <fieldname>abgrado</fieldname>
 <uitype>15</uitype>
 <columnname>abgrado</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>abgrado</fieldlabel>
 <readonly>1</readonly>
@@ -184,12 +184,15 @@
 <info_type>BAS</info_type>
 <helpinfo><![CDATA[]]></helpinfo>
 <masseditable>1</masseditable>
+<picklistvalues>
+<picklistvalue>--None--</picklistvalue>
+</picklistvalues>
 </field>
 <field>
 <fieldname>fechabaja</fieldname>
 <uitype>5</uitype>
 <columnname>fechabaja</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>fechabaja</fieldlabel>
 <readonly>1</readonly>
@@ -209,7 +212,7 @@
 <fieldname>pclave</fieldname>
 <uitype>1</uitype>
 <columnname>pclave</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>numabonado</fieldlabel>
 <readonly>1</readonly>
@@ -229,7 +232,7 @@
 <fieldname>pcoaccion</fieldname>
 <uitype>1</uitype>
 <columnname>pcoaccion</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>pcoaccion</fieldlabel>
 <readonly>1</readonly>
@@ -249,7 +252,7 @@
 <fieldname>pbatic</fieldname>
 <uitype>1</uitype>
 <columnname>pbatic</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>pbatic</fieldlabel>
 <readonly>1</readonly>
@@ -274,7 +277,7 @@
 <fieldname>abtipolocal</fieldname>
 <uitype>15</uitype>
 <columnname>abtipolocal</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>abtipolocal</fieldlabel>
 <readonly>1</readonly>
@@ -289,12 +292,15 @@
 <info_type>BAS</info_type>
 <helpinfo><![CDATA[]]></helpinfo>
 <masseditable>1</masseditable>
+<picklistvalues>
+<picklistvalue>--None--</picklistvalue>
+</picklistvalues>
 </field>
 <field>
 <fieldname>horaapprox</fieldname>
 <uitype>14</uitype>
 <columnname>horaapprox</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>horaapprox</fieldlabel>
 <readonly>1</readonly>
@@ -314,7 +320,7 @@
 <fieldname>operativa</fieldname>
 <uitype>19</uitype>
 <columnname>operativa</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>Notes</fieldlabel>
 <readonly>1</readonly>
@@ -334,7 +340,7 @@
 <fieldname>datoslistado</fieldname>
 <uitype>20</uitype>
 <columnname>datoslistado</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>datoslistado</fieldlabel>
 <readonly>1</readonly>
@@ -354,7 +360,7 @@
 <fieldname>accesoweb</fieldname>
 <uitype>20</uitype>
 <columnname>accesoweb</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>accesoweb</fieldlabel>
 <readonly>1</readonly>
@@ -374,7 +380,7 @@
 <fieldname>obsdir</fieldname>
 <uitype>20</uitype>
 <columnname>obsdir</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>obsdir</fieldlabel>
 <readonly>1</readonly>
@@ -399,7 +405,7 @@
 <fieldname>marca</fieldname>
 <uitype>10</uitype>
 <columnname>marca</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>marca</fieldlabel>
 <readonly>1</readonly>
@@ -422,7 +428,7 @@
 <fieldname>tipopanel</fieldname>
 <uitype>10</uitype>
 <columnname>tipopanel</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>tipopanel</fieldlabel>
 <readonly>1</readonly>
@@ -442,7 +448,7 @@
 <fieldname>snpanel</fieldname>
 <uitype>10</uitype>
 <columnname>snpanel</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>snpanel</fieldlabel>
 <readonly>1</readonly>
@@ -465,7 +471,7 @@
 <fieldname>transgprs</fieldname>
 <uitype>56</uitype>
 <columnname>transgprs</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>transgprs</fieldlabel>
 <readonly>1</readonly>
@@ -485,7 +491,7 @@
 <fieldname>simgprs</fieldname>
 <uitype>19</uitype>
 <columnname>simgprs</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>simgprs</fieldlabel>
 <readonly>1</readonly>
@@ -505,7 +511,7 @@
 <fieldname>opgprs</fieldname>
 <uitype>15</uitype>
 <columnname>opgprs</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>opgprs</fieldlabel>
 <readonly>1</readonly>
@@ -520,12 +526,15 @@
 <info_type>BAS</info_type>
 <helpinfo><![CDATA[]]></helpinfo>
 <masseditable>1</masseditable>
+<picklistvalues>
+<picklistvalue>--None--</picklistvalue>
+</picklistvalues>
 </field>
 <field>
 <fieldname>transiprtc</fieldname>
 <uitype>56</uitype>
 <columnname>transiprtc</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>transiprtc</fieldlabel>
 <readonly>1</readonly>
@@ -545,7 +554,7 @@
 <fieldname>domiprtc</fieldname>
 <uitype>19</uitype>
 <columnname>domiprtc</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>domiprtc</fieldlabel>
 <readonly>1</readonly>
@@ -565,7 +574,7 @@
 <fieldname>cctv</fieldname>
 <uitype>56</uitype>
 <columnname>cctv</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>cctv</fieldlabel>
 <readonly>1</readonly>
@@ -585,7 +594,7 @@
 <fieldname>camip</fieldname>
 <uitype>10</uitype>
 <columnname>camip</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>camip</fieldlabel>
 <readonly>1</readonly>
@@ -608,7 +617,7 @@
 <fieldname>marcacctv</fieldname>
 <uitype>10</uitype>
 <columnname>marcacctv</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>marcacctv</fieldlabel>
 <readonly>1</readonly>
@@ -631,7 +640,7 @@
 <fieldname>calarma</fieldname>
 <uitype>19</uitype>
 <columnname>calarma</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>calarma</fieldlabel>
 <readonly>1</readonly>
@@ -651,7 +660,7 @@
 <fieldname>cbzone_id</fieldname>
 <uitype>10</uitype>
 <columnname>cbzone_id</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>cbzone</fieldlabel>
 <readonly>1</readonly>
@@ -674,7 +683,7 @@
 <fieldname>cto_id</fieldname>
 <uitype>10</uitype>
 <columnname>cto_id</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>Contact Name</fieldlabel>
 <readonly>1</readonly>
@@ -695,12 +704,11 @@
 </field>
 </fields>
 </block>
-</block>
 <block>
 <label>LBL_OPERARIO</label>
 <fields>
 <field>
-<fieldname>smownerid</fieldname>
+<fieldname>assigned_user_id</fieldname>
 <uitype>53</uitype>
 <columnname>smownerid</columnname>
 <tablename>vtiger_crmentity</tablename>
@@ -723,7 +731,7 @@
 <fieldname>abonado_no</fieldname>
 <uitype>4</uitype>
 <columnname>abonado_no</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>abonado_no</fieldlabel>
 <readonly>2</readonly>
@@ -747,7 +755,7 @@
 <fieldname>optel</fieldname>
 <uitype>11</uitype>
 <columnname>optel</columnname>
-<tablename>vtiger_abonabo</tablename>
+<tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
 <fieldlabel>optel</fieldlabel>
 <readonly>1</readonly>
@@ -764,7 +772,7 @@
 <masseditable>1</masseditable>
 </field>
 <field>
-<fieldname>smcreatorid</fieldname>
+<fieldname>created_user_id</fieldname>
 <uitype>52</uitype>
 <columnname>smcreatorid</columnname>
 <tablename>vtiger_crmentity</tablename>
@@ -874,12 +882,12 @@
 <columnindex>3</columnindex>
 </field>
 <field>
-<fieldname>smownerid</fieldname>
+<fieldname>assigned_user_id</fieldname>
 <columnindex>4</columnindex>
 </field>
 </fields>
 </customview>
-</customviews>
+</customviews>LBL_DESCRIPTION_INFORMATION
 <sharingaccess>
 <default>public</default>
 </sharingaccess>

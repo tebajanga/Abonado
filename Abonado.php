@@ -131,7 +131,7 @@ class Abonado extends CRMEntity {
 		if ($event_type == 'module.postinstall') {
 			//Add Abonado Module to Customer Portal
 			global $adb;
-			$this->setModuleSeqNumber('configure', $moduleName, 'abn-', '0000001');
+			$this->setModuleSeqNumber('configure', $modulename, 'abn-', '0000001');
 
 			include_once 'vtlib/Vtiger/Module.php';
 
@@ -149,10 +149,40 @@ class Abonado extends CRMEntity {
 			$assetInstance->setRelatedlist($abonadoInstance, $abonadoLabel, array('ADD'), 'get_dependents_list');
 
 			$cbZoneInstance = Vtiger_Module::getInstance('cbZone');
-			$cbZoneInstance->setRelatedlist($abonadoInstance, $abonadoLabel, array('ADD'), 'get_dependents_list');
+			if ($cbZoneInstance) {
+				$blockInstance = VTiger_Block::getInstance('LBL_ZONE_INFORMATION', $cbZoneInstance);
+				$field = new Vtiger_Field();
+				$field->name = 'abonadoid';
+				$field->label= 'Abonado';
+				$field->table = $cbZoneInstance->basetable;
+				$field->column = 'abonadoid';
+				$field->columntype = 'INT(11)';
+				$field->uitype = 10;
+				$field->displaytype = 1;
+				$field->typeofdata = 'V~O';
+				$field->presence = 0;
+				$blockInstance->addField($field);
+				$field->setRelatedModules(array('Abonado'));
+				$abonadoInstance->setRelatedList($cbZoneInstance, 'cbZone', array('ADD'), 'get_dependents_list');
+			}
 
 			$contactsInstance = Vtiger_Module::getInstance('Contacts');
-			$contactsInstance->setRelatedlist($abonadoInstance, $abonadoLabel, array('ADD'), 'get_dependents_list');
+			if ($contactsInstance) {
+				$blockInstance = VTiger_Block::getInstance('LBL_CONTACT_INFORMATION', $contactsInstance);
+				$field = new Vtiger_Field();
+				$field->name = 'abonadoid';
+				$field->label= 'Abonado';
+				$field->table = $contactsInstance->basetable;
+				$field->column = 'abonadoid';
+				$field->columntype = 'INT(11)';
+				$field->uitype = 10;
+				$field->displaytype = 1;
+				$field->typeofdata = 'V~O';
+				$field->presence = 0;
+				$blockInstance->addField($field);
+				$field->setRelatedModules(array('Abonado'));
+				$abonadoInstance->setRelatedList($contactsInstance, 'Contacts', array('ADD'), 'get_dependents_list');
+			}
 		} elseif ($event_type == 'module.disabled') {
 			// TODO Handle actions when this module is disabled.
 		} elseif ($event_type == 'module.enabled') {
