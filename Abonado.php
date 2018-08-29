@@ -114,13 +114,14 @@ class Abonado extends CRMEntity {
 	public $mandatory_fields = array('numabonado', 'accid', 'active');
 
 	public function save_module($module) {
+		global $adb;
 		if ($this->HasDirectImageField) {
 			$this->insertIntoAttachment($this->id, $module);
 		}
 		if (empty($this->column_fields['optel'])) {
 			// Getting $smsownerid phone
 			$smownerid_phone = '';
-			$rs = $adb->pquery('select phone_work from vtiger_users id = ?', array($this->column_fields['optel']));
+			$rs = $adb->pquery('select phone_work from vtiger_users where id = ?', array($this->column_fields['assigned_user_id']));
 			$smownerid_phone = $adb->query_result($rs, 0, 'phone_work');
 
 			$this->column_fields['optel'] = $smownerid_phone;
