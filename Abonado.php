@@ -113,9 +113,31 @@ class Abonado extends CRMEntity {
 	// Refers to vtiger_field.fieldname values.
 	public $mandatory_fields = array('numabonado', 'accid', 'active');
 
+	public $optel = '';
+
+	public function save($module, $fileid = '') {
+		global $adb;
+		if ($this->mode=='edit') {
+			$rs = $adb->pquery('select optel from vtiger_abonado where abonadoid = ?', array($this->id));
+			$this->optel = $adb->query_result($rs, 0, 'optel');
+		}
+		parent::save($module, $fileid);
+	}
+
 	public function save_module($module) {
 		if ($this->HasDirectImageField) {
 			$this->insertIntoAttachment($this->id, $module);
+		}
+		if ($this->mode=='edit' && empty($this->optel)) {
+			// Getting $smsownerid phone
+			$smsownerid_optel = '';
+			$sql = 'select phone_home from vtiger_users join vtiger_crmentity 
+						on vtiger_crmentity.smsownerid = vtiger_users.smsownerid where setype = ?';
+			$rs = $adb->pquery($sql, array($module));
+			$smsownerid_optel = $adb->query_result($rs, 0, 'phone_home');
+
+			$this->column_fields['optel'] = $this->column_fields['quantity'] ;
+			$adb->pquery('update vtiger_abonado set optel=? where abonadoid=?', array($this->column_fields['optel'], $this->id));
 		}
 	}
 
