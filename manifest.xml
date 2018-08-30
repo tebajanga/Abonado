@@ -763,7 +763,7 @@
 <defaultvalue></defaultvalue>
 <sequence>3</sequence>
 <maximumlength>50</maximumlength>
-<typeofdata></typeofdata>
+<typeofdata>V~O</typeofdata>
 <quickcreate>0</quickcreate>
 <quickcreatesequence>3</quickcreatesequence>
 <displaytype>1</displaytype>
