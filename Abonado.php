@@ -119,12 +119,8 @@ class Abonado extends CRMEntity {
 			$this->insertIntoAttachment($this->id, $module);
 		}
 		if (empty($this->column_fields['optel'])) {
-			// Getting $smsownerid phone
-			$smownerid_phone = '';
 			$rs = $adb->pquery('select phone_work from vtiger_users where id = ?', array($this->column_fields['assigned_user_id']));
-			$smownerid_phone = $adb->query_result($rs, 0, 'phone_work');
-
-			$this->column_fields['optel'] = $smownerid_phone;
+			$this->column_fields['optel'] = $adb->query_result($rs, 0, 'phone_work');
 			$adb->pquery('update vtiger_abonado set optel=? where abonadoid=?', array($this->column_fields['optel'], $this->id));
 		}
 	}
