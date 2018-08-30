@@ -14,7 +14,6 @@ $mod_strings = array(
 	'Abonado ID' => 'Abonado ID',
 
 	'LBL_CUSTOM_INFORMATION' => 'Custom Information',
-	'LBL_MODULEBLOCK_INFORMATION' => 'ModuleBlock Information',
 	'LBL_DESCRIPTION_INFORMATION' => 'Description',
 
 	'LBL_ABONADO' => 'Subscriber',
