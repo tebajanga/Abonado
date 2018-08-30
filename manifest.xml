@@ -88,7 +88,7 @@
 <columnname>active</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>active</fieldlabel>
+<fieldlabel>Active</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -108,7 +108,7 @@
 <columnname>numabonado</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>numabonado</fieldlabel>
+<fieldlabel>Numabonado</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -128,7 +128,7 @@
 <columnname>accid</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>accid</fieldlabel>
+<fieldlabel>Accid</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -151,7 +151,7 @@
 <columnname>fechaalta</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>accid</fieldlabel>
+<fieldlabel>Fechaalta</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -171,7 +171,7 @@
 <columnname>abgrado</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>abgrado</fieldlabel>
+<fieldlabel>Abgrado</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -194,7 +194,7 @@
 <columnname>fechabaja</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>fechabaja</fieldlabel>
+<fieldlabel>Fechabaja</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -214,7 +214,7 @@
 <columnname>pclave</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>numabonado</fieldlabel>
+<fieldlabel>Pclave</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -234,7 +234,7 @@
 <columnname>pcoaccion</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>pcoaccion</fieldlabel>
+<fieldlabel>Pcoaccion</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -254,7 +254,7 @@
 <columnname>pbatic</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>pbatic</fieldlabel>
+<fieldlabel>Pbatic</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -279,7 +279,7 @@
 <columnname>abtipolocal</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>abtipolocal</fieldlabel>
+<fieldlabel>Abtipolocal</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -302,7 +302,7 @@
 <columnname>horaapprox</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>horaapprox</fieldlabel>
+<fieldlabel>Horaapprox</fieldlabel>
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
@@ -322,7 +322,7 @@
 <columnname>operativa</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>Notes</fieldlabel>
+<fieldlabel>Operativa</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -342,7 +342,7 @@
 <columnname>datoslistado</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>datoslistado</fieldlabel>
+<fieldlabel>Datoslistado</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -362,7 +362,7 @@
 <columnname>accesoweb</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>accesoweb</fieldlabel>
+<fieldlabel>Accesoweb</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -382,7 +382,7 @@
 <columnname>obsdir</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>obsdir</fieldlabel>
+<fieldlabel>Obsdir</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -407,7 +407,7 @@
 <columnname>marca</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>marca</fieldlabel>
+<fieldlabel>Marca</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -430,7 +430,7 @@
 <columnname>tipopanel</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>tipopanel</fieldlabel>
+<fieldlabel>Tipopanel</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -450,7 +450,7 @@
 <columnname>snpanel</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>snpanel</fieldlabel>
+<fieldlabel>Snpanel</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -473,7 +473,7 @@
 <columnname>transgprs</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>transgprs</fieldlabel>
+<fieldlabel>Transgprs</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <selected>0</selected>
@@ -493,7 +493,7 @@
 <columnname>simgprs</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>simgprs</fieldlabel>
+<fieldlabel>Simgprs</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -536,7 +536,7 @@
 <columnname>transiprtc</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>transiprtc</fieldlabel>
+<fieldlabel>Transiprtc</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <selected>0</selected>
@@ -556,7 +556,7 @@
 <columnname>domiprtc</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>domiprtc</fieldlabel>
+<fieldlabel>Domiprtc</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -576,7 +576,7 @@
 <columnname>cctv</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>cctv</fieldlabel>
+<fieldlabel>Cctv</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <selected>0</selected>
@@ -596,7 +596,7 @@
 <columnname>camip</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>camip</fieldlabel>
+<fieldlabel>Camip</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -619,7 +619,7 @@
 <columnname>marcacctv</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>marcacctv</fieldlabel>
+<fieldlabel>Marcacctv</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -642,7 +642,7 @@
 <columnname>calarma</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>calarma</fieldlabel>
+<fieldlabel>Calarma</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -662,7 +662,7 @@
 <columnname>cbzone_id</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>cbzone</fieldlabel>
+<fieldlabel>Cbzone</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -733,7 +733,7 @@
 <columnname>abonado_no</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>abonado_no</fieldlabel>
+<fieldlabel>Abonado No</fieldlabel>
 <readonly>2</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -757,7 +757,7 @@
 <columnname>optel</columnname>
 <tablename>vtiger_abonado</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>optel</fieldlabel>
+<fieldlabel>Optel</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
@@ -821,7 +821,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <defaultvalue></defaultvalue>
-<sequence>6</sequence>
+<sequence>6</sequence>Contact Name
 <maximumlength>100</maximumlength>
 <typeofdata>DT~O</typeofdata>
 <quickcreate>3</quickcreate>
@@ -842,7 +842,7 @@
 <columnname>description</columnname>
 <tablename>vtiger_crmentity</tablename>
 <generatedtype>1</generatedtype>
-<fieldlabel>description</fieldlabel>
+<fieldlabel>Description</fieldlabel>
 <readonly>1</readonly>
 <presence>2</presence>
 <defaultvalue></defaultvalue>
